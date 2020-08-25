@@ -3,13 +3,19 @@
 /* fon footer #2F303A */
 /* big text #212121 */
 /* little text #757575 */
+
+:root {
+  --accent-colour: #2196f3;
+  --title-colour: #212121;
+  --text-colour: #757575;
+}
 body {
   background-color: #ffffff;
-  color: #757575;
+  color: var(--text-colour);
 }
 
 .logo {
-  color: #2196f3;
+  color: var(--accent-colour);
 }
 
 .list {
@@ -18,10 +24,27 @@ body {
 
 /* site nav */
 .site-nav .link {
-  color: #212121;
+  color: var(-title-colour);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: #2196f3;
+  color: var(--accent-colour);
+}
+
+/* Hero */
+.hero-title {
+  color: #ffffff;
+}
+
+.hero {
+  background-color: #2f303a;
+}
+
+/* Section */
+.section-title {
+  color: var(--title-colour);
+}
+.transparent-title {
+  color: rgb(225, 0, 0, 0);
 }
